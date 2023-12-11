@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.box {
+    width: 400px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+}
+
+.box p {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.box input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    outline: 0;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+
+}
+
+.box button {
+    background-color: rgb(227, 187, 236);
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 0;
+    outline: 0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin: 20px 0;
+
+}
+
+#QRbox {
+    width: 200px;
+    border-radius: 6px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+
+}
+
+#QRbox img {
+    width: 100%;
+    padding: 10px;
+}
+
+#QRbox.show-img {
+    max-height: 400px;
+    margin: 10px auto;
+
+}
+
+.error {
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-3px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(3px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
